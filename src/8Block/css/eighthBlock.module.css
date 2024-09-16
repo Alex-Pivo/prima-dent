@@ -1,0 +1,296 @@
+.eighthBlock {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.eighthBlock .container {
+  width: 94.4%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.eighthBlock .container .title {
+  text-align: center;
+  width: 500px;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #282828;
+}
+.eighthBlock .container .form {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.eighthBlock .container .inputs {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.eighthBlock .container .inputs .first {
+  width: 48%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.eighthBlock .container .inputs .first .text {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #2c3b50;
+}
+.eighthBlock .container .inputs .first .name {
+  width: 100%;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #b7b7b7;
+  border-bottom: 3px solid #b7b7b7;
+  transition: all ease-in-out 0.4s;
+}
+.eighthBlock .container .inputs .first .name:focus {
+  color: #282828;
+  border-bottom: 3px solid #282828;
+}
+.eighthBlock .container .inputs .second {
+  width: 48%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.eighthBlock .container .inputs .second .phoneInput .formNum {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom: 3px solid #b7b7b7;
+  transition: all ease-in-out 0.4s;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #b7b7b7;
+}
+.eighthBlock .container .inputs .second .phoneInput .formNum:focus {
+  color: #282828;
+  border-bottom: 3px solid #282828;
+}
+.eighthBlock .container .inputs .second .phoneInput .butNum {
+  transition: all ease-in-out 0.4s;
+  border: none;
+  background-color: #ffffff;
+  border-bottom: 3px solid #b7b7b7;
+  border-radius: 0;
+}
+.eighthBlock .container .inputs .second .text {
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #2c3b50;
+  margin-bottom: 20px;
+}
+.eighthBlock .container .inputs .second .number {
+  width: 100%;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #b7b7b7;
+  border-bottom: 3px solid #b7b7b7;
+  transition: all ease-in-out 0.4s;
+}
+.eighthBlock .container .inputs .second .number:focus {
+  color: #282828;
+  border-bottom: 3px solid #282828;
+}
+.eighthBlock .container .btn {
+  width: 290px;
+  height: 65px;
+  border-radius: 5px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  background-color: #305381;
+  color: #f9f9f9;
+}
+
+@media (max-width: 1440px) {
+  .eighthBlock {
+    height: 387px;
+    margin-bottom: 140px;
+  }
+}
+@media (max-width: 1024px) {
+  .eighthBlock {
+    margin-bottom: 100px;
+  }
+  .eighthBlock .container {
+    width: 94.4%;
+    height: 400px;
+  }
+  .eighthBlock .container .title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .eighthBlock .container .inputs {
+    height: 50px;
+  }
+  .eighthBlock .container .inputs .first .text {
+    font-size: 20px;
+  }
+  .eighthBlock .container .inputs .first .name {
+    font-size: 20px;
+  }
+  .eighthBlock .container .inputs .second .text {
+    font-size: 20px;
+  }
+  .eighthBlock .container .inputs .second .phoneInput .formNum {
+    font-size: 20px;
+  }
+  .eighthBlock .container .inputs .second .numberBox .flagBoxActive {
+    width: 220px;
+  }
+  .eighthBlock .container .inputs .second .numberBox .flagBoxActive .contFlag {
+    font-size: 20px;
+  }
+  .eighthBlock .container .btn {
+    width: 290px;
+    height: 55px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .eighthBlock {
+    height: 417px;
+    margin-bottom: 40px;
+  }
+  .eighthBlock .container {
+    width: 91.4%;
+    height: 417px;
+  }
+  .eighthBlock .container .title {
+    width: 303px;
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  .eighthBlock .container .form {
+    height: 301px;
+  }
+  .eighthBlock .container .inputs {
+    width: 100%;
+    height: 193px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .eighthBlock .container .inputs .first {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .eighthBlock .container .inputs .first .text {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .eighthBlock .container .inputs .first .name {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .eighthBlock .container .inputs .second {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .eighthBlock .container .inputs .second .text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .eighthBlock .container .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 426px) {
+  .eighthBlock {
+    height: 417px;
+    margin-bottom: 40px;
+  }
+  .eighthBlock .container {
+    width: 91.4%;
+    height: 417px;
+  }
+  .eighthBlock .container .title {
+    width: 303px;
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  .eighthBlock .container .inputs {
+    width: 100%;
+    height: 193px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .eighthBlock .container .inputs .first {
+    width: 100%;
+  }
+  .eighthBlock .container .inputs .first .text {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .eighthBlock .container .inputs .first .name {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .eighthBlock .container .inputs .second {
+    width: 100%;
+  }
+  .eighthBlock .container .inputs .second .text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .eighthBlock .container .inputs .second .number {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .eighthBlock .container .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 341px) {
+  .eighthBlock {
+    height: 417px;
+    margin-bottom: 40px;
+  }
+  .eighthBlock .container {
+    width: 91.4%;
+    height: 417px;
+  }
+  .eighthBlock .container .title {
+    width: 200px;
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+}/*# sourceMappingURL=eighthBlock.module.css.map */

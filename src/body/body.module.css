@@ -1,0 +1,428 @@
+.body {
+  width: 100%;
+  height: auto;
+  padding-top: 80px;
+  user-select: none;
+}
+
+.circle {
+  position: fixed;
+  cursor: pointer;
+  z-index: 21;
+  width: 97px;
+  height: 97px;
+  bottom: 20px;
+  right: 2%;
+  box-shadow: 0px 3px 20px 0px #47474740;
+  background-color: #305381;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .telegram {
+    width: 59px;
+    height: 59px;
+    background: url("../assets/img/telegram.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.4s ease 0s;
+  }
+  .cross {
+    width: 40px;
+    height: 40px;
+    background: url("../assets/img/cross.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.2s ease 0s;
+  }
+}
+
+.itemOne,
+.itemTwo,
+.itemThree,
+.itemFour {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+.commentOne,
+.commentTwo {
+  width: 46%;
+  max-height: 100%;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.commentOne .stars {
+  width: 200px;
+  height: 83px;
+  background: url("../assets/img/stars1.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.commentTwo .stars {
+  width: 200px;
+  height: 83px;
+  background: url("../assets/img/stars2.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #737583;
+  margin-bottom: 60px;
+  height: auto;
+}
+
+.user {
+  width: 300px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* background-color: #928e49; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 500;
+  color: #f9f9f9;
+}
+
+.name {
+  margin-left: 20px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 700;
+  color: #444444;
+}
+
+@media (max-width: 1440px) {
+  .body {
+    height: auto;
+  }
+
+  .circle {
+    width: 77px;
+    height: 77px;
+    box-shadow: 0px 3px 20px 0px #47474740;
+    background-color: #305381;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .telegram {
+      width: 40.83px;
+      height: 40.83px;
+    }
+  }
+
+  .commentOne,
+  .commentTwo {
+    width: 48%;
+    height: 275px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .commentOne .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .commentTwo .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #737583;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .user {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .box {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    /* background-color: #5b2162; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    color: #f9f9f9;
+  }
+
+  .name {
+    margin-left: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+  }
+}
+
+@media (max-width: 1024px) {
+  .body {
+    height: auto;
+    padding-top: 82px;
+  }
+
+  .circle {
+    width: 77px;
+    height: 77px;
+    margin-bottom: 35px;
+    box-shadow: 0px 3px 20px 0px #47474740;
+    background-color: #305381;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .telegram {
+      width: 40.83px;
+      height: 40.83px;
+    }
+  }
+
+  .commentOne,
+  .commentTwo {
+    width: 48%;
+    height: 245px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 16px;
+  }
+
+  .commentOne .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .commentTwo .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.5px;
+    color: #737583;
+    margin-bottom: 10px;
+  }
+
+  .user {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .box {
+    width: 39px;
+    height: 39px;
+
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+
+  .name {
+    margin-left: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+  }
+}
+
+@media (max-width: 881px) {
+  .circle {
+    display: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .body {
+    height: auto;
+  }
+
+  .commentOne {
+    width: 91.4%;
+    height: 403px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .commentTwo {
+    display: none;
+  }
+
+  .commentOne .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .commentTwo .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 26.4px;
+    margin-bottom: 10px;
+  }
+
+  .user {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .box {
+    width: 39px;
+    height: 39px;
+
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+
+  .name {
+    margin-left: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+  }
+}
+
+@media (max-width: 426px) {
+  .body {
+    height: auto;
+  }
+  .commentOne {
+    width: 91.4%;
+    height: 403px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+  }
+
+  .commentTwo {
+    display: none;
+  }
+
+  .commentOne .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .commentTwo .stars {
+    width: 143px;
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 26.4px;
+    margin-bottom: 10px;
+  }
+
+  .user {
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .box {
+    width: 39px;
+    height: 39px;
+
+    font-family: Montserrat;
+    font-size: 20px;
+  }
+
+  .name {
+    margin-left: 20px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 700;
+    color: #444444;
+  }
+}
+
+@media (max-width: 341px) {
+  .commentOne {
+    width: 91.4%;
+    height: 463px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+  }
+}

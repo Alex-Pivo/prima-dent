@@ -1,0 +1,436 @@
+.eighthBlock {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 200px;
+  .container {
+    width: 94.4%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      text-align: center;
+      width: 500px;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 58px;
+      color: #282828;
+      margin-bottom: 70px;
+      margin-top: 70px;
+    }
+    .form {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .inputs {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+      // align-items: center;
+      justify-content: space-between;
+      .first {
+        width: 48%;
+        height: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        .text {
+          font-family: Montserrat;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 34px;
+          color: #2c3b50;
+          // margin-bottom: 20px;
+        }
+        .name {
+          width: 100%;
+          height: 40px;
+          font-family: Montserrat;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 34px;
+          color: #b7b7b7;
+          border-bottom: 3px solid #b7b7b7;
+          transition: all ease-in-out 0.4s;
+        }
+        .name:focus {
+          color: #282828;
+          border-bottom: 3px solid #282828;
+        }
+      }
+      .second {
+        width: 48%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .phoneInput {
+          .formNum {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 0;
+            border-bottom-left-radius: 10px;
+
+            border-bottom: 3px solid #b7b7b7;
+            transition: all ease-in-out 0.4s;
+
+            font-family: Montserrat;
+            font-size: 28px;
+            font-weight: 500;
+            line-height: 34px;
+            color: #b7b7b7;
+          }
+          .formNum:focus {
+            color: #282828;
+            border-bottom: 3px solid #282828;
+          }
+
+          .butNum {
+            transition: all ease-in-out 0.4s;
+            border: none;
+            background-color: #ffffff;
+            border-bottom: 3px solid #b7b7b7;
+            border-radius: 0;
+          }
+        }
+
+        .text {
+          font-family: Montserrat;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 34px;
+          color: #2c3b50;
+          margin-bottom: 20px;
+        }
+        .number {
+          width: 100%;
+          height: 40px;
+          font-family: Montserrat;
+          font-size: 28px;
+          font-weight: 500;
+          line-height: 34px;
+          color: #b7b7b7;
+          border-bottom: 3px solid #b7b7b7;
+          transition: all ease-in-out 0.4s;
+        }
+        .number:focus {
+          color: #282828;
+          border-bottom: 3px solid #282828;
+        }
+      }
+    }
+    .btn {
+      width: 290px;
+      height: 65px;
+      border-radius: 5px;
+
+      font-family: "Montserrat", sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 36px;
+      background-color: #2c3b50;
+      color: #f9f9f9;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      transform: scale(1);
+      transition: all 0.4s ease 0s;
+
+      &:hover {
+        background-color: #305381;
+        transition: all 0.4s ease 0s;
+        transform: scale(1.3);
+      }
+      &:active {
+        background-color: #305381;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("/tooth.png");
+        background-size: cover;
+        background-position: center;
+        left: 10px;
+        bottom:10px;
+        width: 40px;
+        height: 40px;
+        // background: #305381;
+        transform: translateX(0%);
+        transition: transform 1s ease;
+        opacity: 1;
+        rotate: (35deg);
+        transition: all 0.8s ease 0s;
+        animation: toothAnimationBefore 3s infinite ease-in-out;
+      }
+
+      &:hover::before {
+        transition: all 0.8s ease 0s;
+        transform: translateX(10%);
+        transform: translateY(-100%);
+        rotate: (-35deg);
+        opacity: 1;
+      }
+
+      &:active::before {
+        transform: translateX(10%);
+        transform: translateY(-100%);
+        rotate: (-35deg);
+        opacity: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("/tooth.png");
+        background-size: cover;
+        background-position: center;
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        // background: #305381;
+        transform: translateX(0%);
+        transition: transform 1s ease;
+        opacity: 1;
+        rotate: (-35deg);
+        transition: all 0.8s ease 0s;
+        animation: toothAnimationBefore 3s infinite ease-in-out;
+      }
+
+      &:hover::after {
+        transition: all 0.8s ease 0s;
+        transform: translateX(10%);
+        transform: translateY(-100%);
+        rotate: (35deg);
+        opacity: 1;
+      }
+
+      &:active::after {
+        transform: translateX(10%);
+        transform: translateY(-100%);
+        rotate: (35deg);
+        opacity: 1;
+      }
+
+      @keyframes toothAnimationBefore {
+        0% {
+          transform: scale(80%);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(110%);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(80%);
+          opacity: 1;
+        }
+      }
+    }
+
+    .btn:hover {
+      background-color: #305381;
+      transition: all 0.4s ease 0s;
+      transform: scale(1.3);
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .eighthBlock {
+    height: auto;
+    margin-bottom: 140px;
+
+    .container{
+      .title{
+        margin-top: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .eighthBlock {
+    margin-bottom: 100px;
+    .container {
+      width: 94.4%;
+      height: auto;
+      .title {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      .inputs {
+        height: 50px;
+        .first {
+          .text {
+            font-size: 20px;
+          }
+          .name {
+            font-size: 20px;
+          }
+        }
+        .second {
+          .text {
+            font-size: 20px;
+          }
+          .phoneInput {
+            .formNum {
+              font-size: 20px;
+            }
+          }
+          .numberBox {
+            .flagBoxActive {
+              width: 220px;
+              .contFlag {
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+      .btn {
+        width: 290px;
+        height: 55px;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .eighthBlock {
+    height: auto;
+    margin-bottom: 40px;
+    .container {
+      width: 91.4%;
+      height: auto;
+      .title {
+        width: 303px;
+        font-size: 28px;
+        line-height: 33.6px;
+      }
+      .form {
+        height: auto;
+      }
+      .inputs {
+        width: 100%;
+        height: 193px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .first {
+          width: 100%;
+          justify-content: space-around;
+          .text {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+          .name {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+        }
+        .second {
+          width: 100%;
+          justify-content: space-around;
+          .text {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          // .number {
+          //   font-size: 20px;
+          //   margin-bottom: 0px;
+          // }
+        }
+      }
+      .btn {
+        width: 100%;
+        height: 60px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .eighthBlock {
+    height: auto;
+    margin-bottom: 40px;
+    .container {
+      width: 91.4%;
+      height: auto;
+      .title {
+        width: 303px;
+        font-size: 28px;
+        line-height: 33.6px;
+      }
+      .inputs {
+        width: 100%;
+        height: 193px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .first {
+          width: 100%;
+          .text {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+          .name {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+        }
+        .second {
+          width: 100%;
+          .text {
+            font-size: 20px;
+            margin-bottom: 20px;
+          }
+          .number {
+            font-size: 20px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+      .btn {
+        width: 100%;
+        height: 60px;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@media (max-width: 341px) {
+  .eighthBlock {
+    height: auto;
+    margin-bottom: 40px;
+    .container {
+      width: 91.4%;
+      height: auto;
+      .title {
+        width: 200px;
+        font-size: 28px;
+        line-height: 33.6px;
+      }
+    }
+  }
+}

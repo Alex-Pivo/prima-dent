@@ -1,0 +1,836 @@
+.sixthBlock {
+  width: 100%;
+  // max-height: 2600px;
+  max-height: auto;
+  margin-bottom: 200px;
+  .container {
+    margin: 0 auto;
+    width: 94.4%;
+    // max-height: 2600px;
+    padding-top: 200px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .title {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 58px;
+      color: #282828;
+      margin-bottom: 70px;
+    }
+    .team {
+      width: 81.25%;
+      // max-height: 2500px;
+      max-height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 30px;
+      justify-content: space-between;
+      .maks {
+        border-radius: 10px;
+        padding: 5px;
+        width: 40%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+        .img {
+          width: 100%;
+          height: 540px;
+          background: url("../assets/img/maks.jpg");
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-bottom: 20px;
+          border-radius: 10px;
+        }
+        .buttons {
+          // margin-top: auto;
+          width: 100%;
+          height: 65px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .btn {
+            width: 40%;
+            height: 65px;
+            border-radius: 5px;
+            background-color: #305381;
+            font-size: 24px;
+            line-height: 36px;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-weight: 600;
+            margin-bottom: 40px;
+          }
+          .btnMinus {
+            width: 40%;
+            height: 65px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            font-size: 24px;
+            line-height: 36px;
+            color: #305381;
+            border: 3px solid #305381;
+            font-family: Montserrat;
+            font-weight: 600;
+            margin-bottom: 40px;
+          }
+          .btnClose {
+            width: 12%;
+            height: 65px;
+            background-color: #ffffff;
+            border: 3px solid #305381;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 50px;
+              width: 50px;
+              transform: rotate(-90deg);
+              transition: transform 0.4s ease;
+            }
+          }
+          .btnCloseMinus {
+            width: 12%;
+            height: 65px;
+            background-color: #305381;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 50px;
+              width: 50px;
+              transform: rotate(90deg);
+              transition: transform 0.4s ease;
+            }
+          }
+        }
+        .sertificates {
+          width: 100%;
+          // height: 1200px;
+          max-height: auto;
+          padding-top: 30px;
+          padding-left: 30px;
+          padding-right: 30px;
+          border-radius: 5px;
+          background-color: #e2e4ec;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            background-position: center;
+          }
+        }
+        .sertificatesMinus {
+          display: none;
+        }
+        .gallery {
+          border-radius: 5px;
+          width: 100%;
+          // height: 1200px;
+          height: auto;
+          padding: 30px;
+          background-color: #e2e4ec;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            background-position: center;
+          }
+        }
+        .galleryMinus {
+          display: none;
+        }
+      }
+
+      .maks:hover {
+        box-shadow: 0px 0px 30px #30538174;
+        transition: all 0.4s ease 0s;
+      }
+
+      .valera {
+        border-radius: 10px;
+        padding: 5px;
+        width: 40%;
+        height: 100%;
+        transition: all 0.4s ease 0s;
+        cursor: pointer;
+        .img {
+          width: 100%;
+          height: 540px;
+          background: url("../assets/img/valera.jpg");
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          background-repeat: no-repeat;
+          margin-bottom: 20px;
+        }
+        .buttons {
+          // margin-top: auto;
+          width: 100%;
+          height: 65px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          .btn {
+            width: 83%;
+            height: 65px;
+            border-radius: 5px;
+            background-color: #305381;
+            font-size: 24px;
+            line-height: 36px;
+            color: #ffffff;
+            font-family: Montserrat;
+            font-weight: 600;
+            margin-bottom: 40px;
+          }
+          .btnMinus {
+            width: 83%;
+            height: 65px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            font-size: 24px;
+            line-height: 36px;
+            color: #305381;
+            border: 3px solid #305381;
+            font-family: Montserrat;
+            font-weight: 600;
+            margin-bottom: 40px;
+          }
+          .btnClose {
+            width: 12%;
+            height: 65px;
+            background-color: #ffffff;
+            border: 3px solid #305381;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 50px;
+              width: 50px;
+              transform: rotate(-90deg);
+              transition: transform 0.4s ease;
+            }
+          }
+          .btnCloseMinus {
+            width: 12%;
+            height: 65px;
+            background-color: #305381;
+            border-radius: 5px;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              height: 50px;
+              width: 50px;
+              transform: rotate(90deg);
+              transition: transform 0.4s ease;
+            }
+          }
+        }
+        .sertificates {
+          padding-top: 30px;
+          padding-left: 30px;
+          padding-right: 30px;
+          border-radius: 5px;
+          width: 100%;
+          // height: 1200px;
+          height: auto;
+          background-color: #e2e4ec;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .image {
+            margin-bottom: 30px;
+            width: 100%;
+            height: auto;
+            background-position: center;
+          }
+        }
+        .sertificatesMinus {
+          display: none;
+        }
+        .gallery {
+          border-radius: 5px;
+          width: 100%;
+          height: 1200px;
+          padding: 30px;
+          background-color: #e2e4ec;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .image {
+            width: 100%;
+            height: 260px;
+            background: url("../assets/img/Block1.png");
+            background-position: center;
+            background-size: cover;
+          }
+        }
+        .galleryMinus {
+          display: none;
+        }
+      }
+
+      .valera:hover {
+        box-shadow: 0px 0px 30px #30538174;
+        transition: all 0.4s ease 0s;
+      }
+    }
+    .btn {
+      margin-top: 50px;
+      width: 321px;
+      height: 65px;
+      background-color: #2c3b50;
+
+      font-size: 24px;
+      line-height: 36px;
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease 0s;
+
+      position: relative;
+      // overflow: hidden;
+
+      &:hover {
+        background-color: #305381;
+        transition: all 0.4s ease 0s;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        background-image: url("/tooth.png");
+        background-size: cover;
+        background-position: center;
+        left: 10px;
+        bottom: 0px;
+        width: 40px;
+        height: 40px;
+        // background: #305381;
+        transform: translateX(0%);
+        transition: transform 1s ease;
+        opacity: 0;
+        rotate: (35deg);
+        transition: all 0.8s ease 0s;
+      }
+
+      &:hover::before {
+        transition: all 0.8s ease 0s;
+        transform: translateX(10%);
+        transform: translateY(-100%);
+        rotate: (-35deg);
+        opacity: 1;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        background-image: url("/tooth.png");
+        background-size: cover;
+        background-position: center;
+        right: 10px;
+        bottom: 0px;
+        width: 40px;
+        height: 40px;
+        // background: #305381;
+        transform: translateX(0%);
+        transition: transform 1s ease;
+        opacity: 0;
+        rotate: (-35deg);
+        transition: all 0.8s ease 0s;
+      }
+
+      &:hover::after {
+        transition: all 0.8s ease 0s;
+        transform: translateX(10%);
+        transform: translateY(-100%);
+        rotate: (35deg);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.name {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin-bottom: 40px;
+  span {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+  }
+}
+
+.info {
+  min-height: 400px;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 35px;
+}
+
+@media (max-width: 1600px) {
+  .info {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 1489px) {
+  .sixthBlock {
+    .container {
+      .team {
+        .valera {
+          .name {
+            margin-bottom: 76px;
+          }
+        }
+      }
+    }
+  }
+  .info {
+    min-height: 550px;
+  }
+}
+
+@media (max-width: 1580px) {
+  .sixthBlock {
+    width: 100%;
+    // max-height: 2081px;
+    margin-bottom: 140px;
+    .container {
+      // max-height: 2081px;
+      padding-top: 180px;
+      .title {
+        font-family: Montserrat;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 58px;
+        color: #282828;
+        margin-bottom: 60px;
+      }
+      .team {
+        // height: 1961px;
+        .maks {
+          width: 47%;
+          height: 100%;
+          .img {
+            width: 100%;
+            height: 400px;
+          }
+        }
+        .valera {
+          width: 47%;
+          height: 100%;
+          .img {
+            width: 100%;
+            height: 400px;
+          }
+          .name {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-bottom: 40px;
+    span {
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 25px;
+    }
+  }
+
+  .info {
+    min-height: 440px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1291px) {
+  .info {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 1267px) {
+  .sixthBlock {
+    .container {
+      .team {
+        .maks {
+          .img {
+            height: 400px;
+          }
+        }
+
+        .valera {
+          .img {
+            height: 400px;
+          }
+
+          .name {
+            margin-bottom: 76px;
+          }
+        }
+      }
+
+      .btn {
+        margin-top: 20px;
+        width: 321px;
+        height: 65px;
+        background-color: #2c3b50;
+
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // transition: all 0.4s ease 0s;
+
+        position: relative;
+        // overflow: hidden;
+
+        &:active {
+          background-color: #305381;
+          // transition: all 0.4s ease 0s;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("/tooth.png");
+          background-size: cover;
+          background-position: center;
+          left: 10px;
+          bottom: 0px;
+          width: 40px;
+          height: 40px;
+          // background: #305381;
+          transform: translateX(0%);
+          // transition: transform 0s ease;
+          opacity: 0;
+          rotate: (35deg);
+          // transition: all 0.8s ease 0s;
+        }
+
+        &:active::before {
+          // transition: all 0.8s ease 0s;
+          transform: translateX(10%);
+          transform: translateY(-100%);
+          rotate: (-35deg);
+          opacity: 1;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          background-image: url("/tooth.png");
+          background-size: cover;
+          background-position: center;
+          right: 10px;
+          bottom: 0px;
+          width: 40px;
+          height: 40px;
+          // background: #305381;
+          transform: translateX(0%);
+          // transition: transform 0s ease;
+          opacity: 0;
+          rotate: (-35deg);
+          // transition: all 0.8s ease 0s;
+        }
+
+        &:active::after {
+          // transition: all 0.8s ease 0s;
+          transform: translateX(10%);
+          transform: translateY(-100%);
+          rotate: (35deg);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .sixthBlock {
+    // height: 1081px;
+    margin-bottom: 100px;
+    .container {
+      // height: 1081px;
+      padding-top: 100px;
+      .title {
+        font-size: 40px;
+        line-height: 50px;
+      }
+      .team {
+        width: 100%;
+        // height: 861px;
+
+        .maks {
+          width: 47%;
+          height: 100%;
+          .img {
+            width: 100%;
+            height: 435px;
+          }
+          .buttons {
+            .btnMinus {
+              font-size: 18px;
+            }
+            .btn {
+              font-size: 18px;
+            }
+          }
+        }
+        .valera {
+          width: 47%;
+          height: 100%;
+          .img {
+            width: 100%;
+            height: 435px;
+          }
+          .buttons {
+            .btnMinus {
+              font-size: 18px;
+            }
+            .btn {
+              font-size: 18px;
+            }
+          }
+          .name {
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+
+    .name {
+      font-size: 20px;
+      span {
+        font-size: 26px;
+      }
+    }
+
+    .info {
+      font-size: 20px;
+      min-height: 460px;
+    }
+  }
+}
+
+@media (max-width: 1014px) {
+  .sixthBlock {
+    .container {
+      .team {
+        .valera {
+          .name {
+            margin-bottom: 76px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 930px) {
+  .sixthBlock {
+    .info {
+      min-height: 420px;
+    }
+  }
+}
+
+@media (max-width: 893px) {
+  .sixthBlock {
+    .info {
+      min-height: 500px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .sixthBlock {
+    // max-height: 4265px;
+    max-height: auto;
+    margin-top: 0px;
+    .container {
+      // max-height: 4265px;
+      max-height: auto;
+      width: 91.4%;
+      padding-top: 82px;
+      .title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 30px;
+      }
+      .team {
+        width: 100%;
+        // max-height: 4235px;
+        max-height: auto;
+        flex-direction: column;
+        .maks {
+          margin: 0 auto;
+          width: 490px;
+          // height: 2156px;
+          max-height: auto;
+          margin-bottom: 0px;
+          .img {
+            width: 100%;
+            height: 449px;
+            margin-bottom: 20px;
+          }
+        }
+        .valera {
+          margin: 0 auto;
+          width: 490px;
+          // height: 2156px;
+          max-height: auto;
+          .img {
+            width: 100%;
+            height: 449px;
+            margin-bottom: 20px;
+          }
+          .name {
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      .btn{
+        width: 100%;
+      }
+    }
+
+    .name {
+      font-size: 22px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      span {
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+
+    .info {
+      font-size: 18px;
+      line-height: 26px;
+      min-height: 0px;
+    }
+  }
+}
+
+@media (max-width: 496px) {
+  .sixthBlock {
+    // max-height: 4265px;
+    max-height: auto;
+    margin-top: 0px;
+    .container {
+      // max-height: 4265px;
+      max-height: auto;
+      width: 91.4%;
+      .title {
+        font-size: 28px;
+        line-height: 34px;
+        margin-bottom: 30px;
+      }
+      .team {
+        width: 100%;
+        // max-height: 4235px;
+        max-height: auto;
+        flex-direction: column;
+        .maks {
+          width: 320px;
+          // height: 2156px;
+          max-height: auto;
+          margin-bottom: 0px;
+          .img {
+            width: 100%;
+            height: 389px;
+            margin-bottom: 20px;
+          }
+        }
+        .valera {
+          width: 320px;
+          // height: 2156px;
+          max-height: auto;
+          .img {
+            width: 100%;
+            height: 389px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    .name {
+      font-size: 22px;
+      line-height: 29px;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      span {
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+
+    .info {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}
+
+@media (max-width: 341px) {
+  .sixthBlock {
+    max-height: 4465px;
+    .container {
+      max-height: 4465px;
+      .team {
+        max-height: 4435px;
+      }
+    }
+  }
+}

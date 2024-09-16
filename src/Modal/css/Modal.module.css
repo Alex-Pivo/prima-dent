@@ -1,0 +1,95 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 500;
+}
+.modal__content {
+  border-radius: 12px;
+  background-color: white;
+  width: 80%;
+  height: 400px;
+  transition: 0.4s all;
+  transform: scale(1);
+  padding: 33px 48px;
+  z-index: 500;
+}
+.modal__content_active {
+  border-radius: 12px;
+  background-color: white;
+  width: 80%;
+  height: 460px;
+  transition: 0.4s all;
+  transform: scale(1);
+  padding: 20px 10px;
+  z-index: 500;
+}
+.modal__content_active form .title_h3 {
+  margin-bottom: 32px;
+}
+.modal__content_active form .title_h3 h3 {
+  font-size: 30px;
+  text-align: center;
+}
+.modal__content_active form .form_wrapper .contact_info {
+  margin-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+}
+.modal__content_active form .form_wrapper .contact_info label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.modal__content_active form .form_wrapper .contact_info input {
+  width: 90%;
+  padding-right: 12px;
+  padding-left: 12px;
+  border: 1px solid #b1b7ba;
+  outline: none;
+  border-radius: 12px;
+  height: 50px;
+  font-size: 16px;
+}
+.modal__content_active form .form_wrapper .btn_wait {
+  display: inline-grid;
+  justify-content: center;
+  align-items: center;
+  padding: 17px 60px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: #ecf3e1;
+  color: #607350;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.modal__content_active form .form_wrapper .btn_wait:hover {
+  background: #338573;
+  color: white;
+}
+.modal_active {
+  transition: 0.5s;
+  opacity: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  z-index: 500;
+}/*# sourceMappingURL=Modal.module.css.map */

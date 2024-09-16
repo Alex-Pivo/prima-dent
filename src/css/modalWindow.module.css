@@ -1,0 +1,391 @@
+.modal {
+  position: fixed;
+  padding: 30px;
+  bottom: 530px;
+  right: 180px;
+  width: 347px;
+  height: 335px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  z-index: 20;
+}
+.modal .title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.modal .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #b7b7b7;
+}
+.modal .inputBox .flagBox {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.modal .inputBox .flagBox .flag {
+  width: 40px;
+  height: 25px;
+  background: url("../assets/img/Flag.svg");
+  background-position: center;
+  background-size: cover;
+}
+.modal .inputBox .flagBox .arrow {
+  width: 22px;
+  height: 22px;
+  background: url("../assets/img/down.svg");
+  background-position: center;
+  background-size: cover;
+}
+.modal .inputBox .flagBox .num {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #282828;
+  margin-top: 2px;
+}
+.modal .inputBox .input {
+  width: 60%;
+  height: 100%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #282828;
+}
+.modal .btn {
+  width: 100%;
+  height: 52px;
+  border-radius: 5px;
+  background: #305381;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #f9f9f9;
+}
+.modal .text {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+  color: #6b6b6b;
+}
+
+.active {
+  position: fixed;
+  padding: 30px;
+  bottom: 110px;
+  right: 120px;
+  width: 347px;
+  height: 335px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  z-index: 20;
+}
+.active .title {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+}
+.active .phoneInput .formNum {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom: 3px solid #b7b7b7;
+  transition: all ease-in-out 0.4s;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 34px;
+  color: #b7b7b7;
+}
+.active .phoneInput .formNum:focus {
+  color: #282828;
+  border-bottom: 3px solid #282828;
+}
+.active .phoneInput .butNum {
+  transition: all ease-in-out 0.4s;
+  border: none;
+  background-color: #ffffff;
+  border-bottom: 3px solid #b7b7b7;
+  border-radius: 0;
+}
+.active .inputBox {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #b7b7b7;
+}
+.active .inputBox .flagBox {
+  width: 26%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.4s ease 0s;
+}
+.active .inputBox .flagBox .flag {
+  width: 40px;
+  height: 25px;
+  background: url("../assets/img/Flag.svg");
+  background-position: center;
+  background-size: cover;
+  border: 3px solid #282828;
+}
+.active .inputBox .flagBox .arrow {
+  width: 22px;
+  height: 22px;
+  background: url("../assets/img/down.svg");
+  background-position: center;
+  background-size: cover;
+}
+.active .inputBox .flagBox .num {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #282828;
+  margin-top: 2px;
+}
+.active .inputBox .flagBox .contFlag {
+  display: none;
+}
+.active .inputBox .flagBoxActive {
+  margin-top: 160px;
+  height: 520%;
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e2e4ec;
+  transition: all 0.4s ease 0s;
+  border-radius: 5px;
+}
+.active .inputBox .flagBoxActive .flag {
+  width: 50px;
+  height: 35px;
+  background: url("../assets/img/Flag.svg");
+  background-position: center;
+  background-size: cover;
+  display: none;
+}
+.active .inputBox .flagBoxActive .contFlag {
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  color: #2c3b50;
+  text-align: left;
+  transition: all 0.4s ease 0s;
+}
+.active .inputBox .flagBoxActive .contFlag .ukr {
+  width: 50px;
+  height: 35px;
+  background: url("../assets/img/Flag.svg");
+  background-position: center;
+  background-size: cover;
+}
+.active .inputBox .flagBoxActive .contFlag .slov {
+  width: 50px;
+  height: 35px;
+  background: url("../8Block/flags/Slovakia.svg");
+  background-position: center;
+  background-size: cover;
+}
+.active .inputBox .flagBoxActive .contFlag .chech {
+  width: 50px;
+  height: 35px;
+  background: url("../8Block/flags/Czech.svg");
+  background-position: center;
+  background-size: cover;
+}
+.active .inputBox .flagBoxActive .contFlag .hug {
+  width: 50px;
+  height: 35px;
+  background: url("../8Block/flags/Hungary.svg");
+  background-position: center;
+  background-size: cover;
+}
+.active .inputBox .flagBoxActive .contFlag:hover {
+  box-shadow: 0px 0px 10px #4475b6;
+}
+.active .inputBox .flagBoxActive .arrow {
+  margin-top: 6px;
+  width: 22px;
+  height: 22px;
+  background: url("../assets/img/down.svg");
+  background-position: center;
+  background-size: cover;
+  transform: rotate(180deg);
+}
+.active .inputBox .input {
+  width: 60%;
+  height: 100%;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 19px;
+  color: #282828;
+}
+.active .btn {
+  width: 100%;
+  height: 52px;
+  border-radius: 5px;
+  background: #305381;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #f9f9f9;
+}
+.active .text {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+  color: #6b6b6b;
+}
+
+@media (max-width: 1440px) {
+  .active {
+    padding: 20px;
+    bottom: 96px;
+    right: 6%;
+    width: 297px;
+    height: 285px;
+  }
+  .active .title {
+    font-size: 20px;
+    width: 239px;
+  }
+  .active .inputBox .flagBox {
+    width: 20%;
+  }
+  .active .inputBox .flagBox .flag {
+    width: 28px;
+    height: 18px;
+  }
+  .active .inputBox .flagBox .arrow {
+    width: 19px;
+    height: 19px;
+  }
+  .active .inputBox .flagBox .num {
+    font-size: 16px;
+  }
+  .active .inputBox .input {
+    width: 66%;
+    font-size: 16px;
+  }
+  .active .inputBox .flagBoxActive {
+    margin-top: 100px;
+    width: 210px;
+    height: 320%;
+    position: relative;
+    z-index: 25;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #e2e4ec;
+  }
+  .active .inputBox .flagBoxActive .contFlag {
+    font-size: 18px;
+  }
+  .active .inputBox .flagBoxActive .contFlag .flag {
+    width: 28px;
+    height: 18px;
+    background: url("../assets/img/Flag.svg");
+    background-position: center;
+    background-size: cover;
+    display: none;
+  }
+  .active .inputBox .flagBoxActive .contFlag .ukr {
+    width: 28px;
+    height: 18px;
+    background: url("../assets/img/Flag.svg");
+    background-position: center;
+    background-size: cover;
+  }
+  .active .inputBox .flagBoxActive .contFlag .slov {
+    width: 28px;
+    height: 18px;
+    background: url("../8Block/flags/Slovakia.svg");
+    background-position: center;
+    background-size: cover;
+  }
+  .active .inputBox .flagBoxActive .contFlag .chech {
+    width: 28px;
+    height: 18px;
+    background: url("../8Block/flags/Czech.svg");
+    background-position: center;
+    background-size: cover;
+  }
+  .active .inputBox .flagBoxActive .contFlag .hug {
+    width: 28px;
+    height: 18px;
+    background: url("../8Block/flags/Hungary.svg");
+    background-position: center;
+    background-size: cover;
+  }
+  .active .inputBox .flagBoxActive .contFlag .arrow {
+    margin-top: 6px;
+    width: 22px;
+    height: 22px;
+    background: url("../assets/img/down.svg");
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+  }
+  .active .btn {
+    height: 42px;
+    font-size: 16px;
+  }
+  .active .text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .active {
+    right: 2%;
+    bottom: 140px;
+  }
+}/*# sourceMappingURL=modalWindow.module.css.map */

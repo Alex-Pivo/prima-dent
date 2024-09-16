@@ -1,0 +1,298 @@
+.secondBlock {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 200px;
+  font-family: Montserrat;
+  letter-spacing: 0.1000000015px;
+}
+.secondBlock .secondBlock__container {
+  width: 94.4%;
+  height: 579px;
+  margin: 0 auto;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondBlock .secondBlock__container .container__title {
+  font-size: 48px;
+  line-height: 58px;
+  color: #282828;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+.secondBlock .secondBlock__container .container__btn {
+  width: 321px;
+  height: 65px;
+  border-radius: 5px;
+  background-color: #305381;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  color: #f9f9f9;
+}
+
+.container__cards {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.container__cards .card {
+  width: 22%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.container__cards .card .pic__container {
+  width: 109px;
+  height: 104px;
+  border-radius: 16px;
+  background-color: rgba(191, 193, 205, 0.5411764706);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container__cards .card .pic__container .pic {
+  width: 56px;
+  height: 56px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.container__cards .card .card__title {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 29px;
+  margin-bottom: 20px;
+  color: #2c3b50;
+}
+.container__cards .card .card__text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #737583;
+}
+
+@media (max-width: 1440px) {
+  .secondBlock {
+    height: 479px;
+    margin-bottom: 140px;
+  }
+  .secondBlock .secondBlock__container {
+    height: 479px;
+    margin-top: 140px;
+  }
+  .secondBlock .secondBlock__container .container__title {
+    font-size: 48px;
+    line-height: 58px;
+    color: #282828;
+    margin-bottom: 0px;
+  }
+  .secondBlock .secondBlock__container .container__btn {
+    width: 321px;
+    height: 65px;
+    border-radius: 5px;
+    background-color: #305381;
+    font-size: 24px;
+    line-height: 36px;
+    color: #f9f9f9;
+  }
+  .container__cards {
+    height: 236px;
+  }
+  .container__cards .card {
+    width: 21%;
+    height: 236px;
+  }
+  .container__cards .card .pic__container {
+    width: 69px;
+    height: 64px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+  }
+  .container__cards .card .pic__container .pic {
+    width: 36px;
+    height: 36px;
+  }
+  .container__cards .card .card__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .card__text {
+    font-size: 16px;
+    line-height: 19.5px;
+  }
+}
+@media (max-width: 1024px) {
+  .secondBlock {
+    height: 479px;
+    margin-bottom: 100px;
+  }
+  .secondBlock .secondBlock__container {
+    height: 479px;
+    margin-top: 100px;
+  }
+  .secondBlock .secondBlock__container .container__title {
+    font-size: 40px;
+    line-height: 50px;
+    color: #282828;
+    margin-bottom: 0px;
+  }
+  .secondBlock .secondBlock__container .container__btn {
+    width: 321px;
+    height: 55px;
+    border-radius: 5px;
+    background-color: #305381;
+    font-size: 20px;
+    line-height: 36px;
+    color: #f9f9f9;
+  }
+  .container__cards {
+    height: 256px;
+  }
+  .container__cards .card {
+    width: 22%;
+    height: 236px;
+  }
+  .container__cards .card .pic__container {
+    width: 65px;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .pic__container .pic {
+    width: 36px;
+    height: 36px;
+  }
+  .container__cards .card .card__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .card__text {
+    font-size: 14px;
+    line-height: 19.5px;
+  }
+}
+@media (max-width: 769px) {
+  .secondBlock {
+    height: 1059px;
+    margin-bottom: 70px;
+  }
+  .secondBlock .secondBlock__container {
+    height: 1059px;
+    width: 91.4%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .secondBlock .secondBlock__container .container__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .secondBlock .secondBlock__container .container__btn {
+    font-size: 22px;
+    line-height: 33px;
+    width: 100%;
+    height: 60px;
+  }
+  .container__cards {
+    width: 100%;
+    height: 871px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .container__cards .card {
+    width: 100%;
+    height: 204px;
+  }
+  .container__cards .card .pic__container {
+    width: 71px;
+    height: 66px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .pic__container .pic {
+    width: 36px;
+    height: 36px;
+  }
+  .container__cards .card .card__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .card__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+@media (max-width: 426px) {
+  .secondBlock {
+    height: 1059px;
+    margin-bottom: 30px;
+  }
+  .secondBlock .secondBlock__container {
+    height: 1059px;
+    width: 91.4%;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .secondBlock .secondBlock__container .container__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .secondBlock .secondBlock__container .container__btn {
+    font-size: 22px;
+    line-height: 33px;
+    width: 100%;
+    height: 60px;
+  }
+  .container__cards {
+    width: 100%;
+    height: 871px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .container__cards .card {
+    width: 100%;
+    height: 204px;
+  }
+  .container__cards .card .pic__container {
+    width: 71px;
+    height: 66px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .pic__container .pic {
+    width: 36px;
+    height: 36px;
+  }
+  .container__cards .card .card__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .container__cards .card .card__text {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+}/*# sourceMappingURL=secondBlock.module.css.map */

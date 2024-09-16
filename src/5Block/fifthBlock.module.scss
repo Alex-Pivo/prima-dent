@@ -1,0 +1,579 @@
+.fifthBlock {
+  width: 100%;
+  height: auto;
+  .container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 58px;
+      color: #282828;
+    }
+
+    .services {
+      margin-top: 70px;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      .service {
+        width: 480px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 10px;
+        border-radius: 8px;
+        transition: all 0.4s ease-in-out 0s;
+        .serviceTitle {
+          font-family: Montserrat;
+          font-size: 30px;
+          font-weight: 700;
+          line-height: 37px;
+          color: #282828;
+          // margin-bottom: 20px;
+        }
+        .serviceText {
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20px;
+          color: #737583;
+          // margin-bottom: 20px;
+        }
+        .boxes {
+          width: 100%;
+          height: 65px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          transition: all 0.4s ease-in-out 0s;
+          .btn {
+            width: 100%;
+            height: 0px;
+            visibility: hidden;
+            border-radius: 5px;
+            background-color: #305381;
+
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: #f9f9f9;
+            transition: all 0.4s ease-in-out 0s;
+          }
+          .btn:hover {
+            height: 65px;
+            color: #f9f9f9;
+            background-color: #3d6eae;
+            transition: all 0.4s ease-in-out 0s;
+          }
+          .price {
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            color: #282828;
+          }
+        }
+      }
+      .service:hover {
+        width: 500px;
+        height: 230px;
+        box-shadow: 0px 0px 20px #30538143;
+        transition: all 0.4s ease-in-out 0s;
+        .boxes {
+          width: 100%;
+          height: 65px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          .btn {
+            width: 100%;
+            height: 65px;
+            border-radius: 5px;
+            background-color: #305381;
+            visibility: visible;
+
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 29px;
+            color: #f9f9f9;
+            transition: all 0.4s ease-in-out 0s;
+          }
+          .btn:hover {
+            color: #f9f9f9;
+            background-color: #3d6eae;
+            transition: all 0.4s ease-in-out 0s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services::-webkit-scrollbar {
+  width: 6px;
+}
+
+@media (max-width: 1540px) {
+  .fifthBlock {
+    height: auto;
+    margin-bottom: 0px;
+    .container {
+      width: 100%;
+      height: 100%;
+      padding-top: 140px;
+      .title {
+        margin-bottom: 60px;
+      }
+
+      .services {
+        max-width: 100%;
+        height: auto;
+        .service {
+          min-width: 490px;
+          height: 230px;
+          .serviceTitle {
+            margin-bottom: 20px;
+          }
+          .serviceText {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .fifthBlock {
+    height: auto;
+    .container {
+      padding-top: 100px;
+      .title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 40px;
+      }
+
+      .services {
+        gap: 20px;
+        .service {
+          min-width: 490px;
+          pointer-events: none;
+          height: auto;
+          .serviceTitle {
+            font-size: 30px;
+          }
+          .serviceText {
+            font-size: 16px;
+            line-height: 20px;
+          }
+          .boxes {
+            height: 0px;
+            display: none;
+            .btn {
+              height: 0px;
+              font-size: 20px;
+            }
+            .price {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .service:hover {
+          min-width: 490px;
+          box-shadow: none;
+          .serviceTitle {
+            font-size: 30px;
+            margin-bottom: 0px;
+          }
+          .serviceText {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 0px;
+          }
+          .boxes {
+            .btn {
+              height: inherit;
+              font-size: 20px;
+            }
+            .price {
+              font-size: 20px;
+            }
+          }
+        }
+        .active {
+          pointer-events: all;
+          min-width: 490px;
+          height: 265px;
+          box-shadow: 0px 0px 20px #30538143;
+          transition: all 0.4s ease-in-out 0s;
+          .boxes {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            .btn {
+              width: 100%;
+              height: 65px;
+              border-radius: 5px;
+              background-color: #305381;
+              visibility: visible;
+
+              font-family: Montserrat;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 29px;
+              color: #f9f9f9;
+              transition: all 0.4s ease-in-out 0s;
+            }
+            .btn:hover {
+              color: #f9f9f9;
+              background-color: #3d6eae;
+              transition: all 0.4s ease-in-out 0s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .fifthBlock {
+    height: auto;
+    overflow: none;
+    .container {
+      margin-top: 0px;
+      padding-top: 82px;
+      width: 90%;
+      height: auto;
+      overflow: none;
+      .title {
+        margin-bottom: 0px;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        text-align: center;
+      }
+
+      .services {
+        overflow: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: auto;
+        flex-shrink: inherit;
+        scroll-behavior: smooth;
+        gap: 10px;
+        .service {
+          width: 96%;
+          min-width: 0px;
+          height: auto;
+          margin-bottom: 0px;
+
+          .serviceTitle {
+            font-size: 24px;
+            line-height: 20px;
+          }
+          .serviceText {
+            font-size: 16px;
+            line-height: 20px;
+          }
+          .boxes {
+            width: 100%;
+            height: 60px;
+            .btn {
+              font-size: 20px;
+            }
+            .price {
+              font-size: 24px;
+            }
+          }
+        }
+        .service:hover {
+          width: 96%;
+          min-width: 0px;
+          min-height: 185px;
+          margin-bottom: 0px;
+          .serviceTitle {
+            font-size: 24px;
+            // line-height: 20px;
+          }
+          .serviceText {
+            font-size: 16px;
+            // line-height: 20px;
+          }
+          .boxes {
+            width: 100%;
+            height: 0px;
+            .btn {
+              font-size: 20px;
+            }
+            .price {
+              font-size: 24px;
+            }
+          }
+        }
+        .active {
+          width: 96%;
+          height: 265px;
+          box-shadow: 0px 0px 20px #30538143;
+          transition: all 0.4s ease-in-out 0s;
+          .boxes {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            .btn {
+              width: 100%;
+              height: 65px;
+              border-radius: 5px;
+              background-color: #305381;
+              visibility: visible;
+
+              font-family: Montserrat;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 29px;
+              color: #f9f9f9;
+              transition: all 0.4s ease-in-out 0s;
+            }
+            .btn:hover {
+              color: #f9f9f9;
+              background-color: #3d6eae;
+              transition: all 0.4s ease-in-out 0s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .fifthBlock {
+    height: auto;
+    .container {
+      margin-top: 0px;
+      width: 91.4%;
+      padding-top: 82px;
+      .title {
+        margin-bottom: 0px;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 34px;
+        text-align: center;
+      }
+
+      .services {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min-width: 100%;
+        height: auto;
+        flex-shrink: inherit;
+        scroll-behavior: smooth;
+        .service {
+          min-width: 96%;
+          height: auto;
+          margin-bottom: 20px;
+          .serviceTitle {
+            font-size: 24px;
+          }
+          .serviceText {
+            font-size: 16px;
+            line-height: 20px;
+          }
+          .boxes {
+            width: 100%;
+            height: 60px;
+            .btn {
+              height: 0px;
+              font-size: 20px;
+            }
+            .price {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .service:hover {
+          min-width: 96%;
+          min-height: 265px;
+          margin-bottom: 20px;
+          .serviceTitle {
+            font-size: 24px;
+            line-height: 20px;
+          }
+          .serviceText {
+            font-size: 16px;
+            line-height: 20px;
+          }
+          .boxes {
+            width: 100%;
+            height: 0px;
+            .btn {
+              font-size: 20px;
+              display: none;
+            }
+            .price {
+              font-size: 24px;
+            }
+          }
+        }
+
+        .active {
+          width: 96%;
+          height: 265px;
+          box-shadow: 0px 0px 20px #30538143;
+          transition: all 0.4s ease-in-out 0s;
+          .boxes {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            .btn {
+              width: 100%;
+              height: 65px;
+              border-radius: 5px;
+              background-color: #305381;
+              visibility: visible;
+
+              font-family: Montserrat;
+              font-size: 24px;
+              font-weight: 700;
+              line-height: 29px;
+              color: #f9f9f9;
+              transition: all 0.4s ease-in-out 0s;
+            }
+            .btn:hover {
+              color: #f9f9f9;
+              background-color: #3d6eae;
+              transition: all 0.4s ease-in-out 0s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media (pointer: coarse) {
+//   .fifthBlock {
+//     height: auto;
+//     .container {
+//       padding-top: 100px;
+//       .title {
+//         font-size: 40px;
+//         line-height: 50px;
+//         margin-bottom: 40px;
+//       }
+
+//       .services {
+//         gap: 20px;
+//         .service {
+//           min-width: 490px;
+//           .serviceTitle {
+//             font-size: 30px;
+//           }
+//           .serviceText {
+//             font-size: 16px;
+//             line-height: 20px;
+//           }
+//           .boxes {
+//             .btn {
+//               // height: 55px;
+//               font-size: 20px;
+//             }
+//             .price {
+//               font-size: 20px;
+//             }
+//           }
+//         }
+
+//         .service:hover{
+//           min-width: 490px;
+//           box-shadow: none;
+//           .serviceTitle {
+//             font-size: 30px;
+//           }
+//           .serviceText {
+//             font-size: 16px;
+//             line-height: 20px;
+//           }
+//           .boxes {
+//             .btn {
+//               height: inherit;
+//               font-size: 20px;
+//             }
+//             .price {
+//               font-size: 20px;
+//             }
+//           }
+//         }
+//         .active {
+//           min-width: 490px;
+//           height: 265px;
+//           box-shadow: 0px 0px 20px #30538143;
+//           transition: all 0.4s ease-in-out 0s;
+//           .boxes {
+//             width: 100%;
+//             height: 60px;
+//             display: flex;
+//             flex-direction: row;
+//             align-items: center;
+//             justify-content: flex-start;
+//             .btn {
+//               width: 100%;
+//               height: 65px;
+//               border-radius: 5px;
+//               background-color: #305381;
+//               visibility: visible;
+
+//               font-family: Montserrat;
+//               font-size: 24px;
+//               font-weight: 700;
+//               line-height: 29px;
+//               color: #f9f9f9;
+//               transition: all 0.4s ease-in-out 0s;
+//             }
+//             .btn:hover {
+//               color: #f9f9f9;
+//               background-color: #3d6eae;
+//               transition: all 0.4s ease-in-out 0s;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

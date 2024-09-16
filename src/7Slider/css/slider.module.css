@@ -1,0 +1,301 @@
+.mainContainer {
+  width: 100%;
+  height: 700px;
+  background-color: #e2e4ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.mainContainer .title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  text-align: center;
+  width: 500px;
+  color: #282828;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.mainContainer .container {
+  width: 100%;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainContainer .container .window {
+  width: 80%;
+  height: 100%;
+  overflow: hidden;
+}
+.mainContainer .container .window .slide {
+  height: 100%;
+  opacity: 1;
+  transition: transform ease-in-out 0.4s;
+  display: flex;
+  flex-direction: row;
+}
+
+.arrow {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 50px;
+  height: 50px;
+}
+
+.dots {
+  width: 130px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dots .dotOne {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color ease-in-out 0.4s;
+}
+.dots .dotTwo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color ease-in-out 0.4s;
+}
+.dots .dotThree {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: background-color ease-in-out 0.4s;
+}
+
+@media (max-width: 1440px) {
+  .mainContainer {
+    width: 100%;
+    height: 626px;
+    margin-bottom: 140px;
+  }
+  .mainContainer .title {
+    width: 583px;
+  }
+  .mainContainer .container {
+    width: 100%;
+    height: 275px;
+  }
+  .mainContainer .container .window {
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .mainContainer .container .window .slide {
+    height: 100%;
+    opacity: 1;
+    transition: transform ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainContainer .dots {
+    width: 96px;
+    height: 18px;
+    margin-bottom: 30px;
+  }
+  .mainContainer .dots .dotOne {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.4s;
+  }
+  .mainContainer .dots .dotTwo {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.4s;
+  }
+  .mainContainer .dots .dotThree {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.4s;
+  }
+}
+@media (max-width: 1024px) {
+  .mainContainer {
+    width: 100%;
+    height: 526px;
+    margin-bottom: 100px;
+  }
+  .mainContainer .title {
+    width: 583px;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .mainContainer .container {
+    width: 100%;
+    height: 245px;
+  }
+  .mainContainer .container .window {
+    width: 90%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .mainContainer .container .window .slide {
+    height: 100%;
+    opacity: 1;
+    transition: transform ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainContainer .dots {
+    width: 96px;
+    height: 18px;
+    margin-bottom: 30px;
+  }
+  .mainContainer .dots .dotOne {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.4s;
+  }
+  .mainContainer .dots .dotTwo {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.4s;
+  }
+  .mainContainer .dots .dotThree {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: background-color ease-in-out 0.4s;
+  }
+}
+@media (max-width: 769px) {
+  .mainContainer {
+    height: 759px;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 68px;
+  }
+  .mainContainer .title {
+    width: 331px;
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  .mainContainer .title span {
+    color: #305381;
+  }
+  .mainContainer .container {
+    width: 100%;
+    height: 245px;
+  }
+  .mainContainer .container .window {
+    width: 100%;
+    height: 403px;
+    overflow: hidden;
+  }
+  .mainContainer .container .window .slide {
+    height: 100%;
+    opacity: 1;
+    transition: transform ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainContainer .container .arrow {
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    width: 30px;
+    height: 30px;
+  }
+  .mainContainer .dots {
+    width: 96px;
+    height: 18px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 426px) {
+  .mainContainer {
+    height: 759px;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+  .mainContainer .title {
+    width: 331px;
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  .mainContainer .title span {
+    color: #305381;
+  }
+  .mainContainer .container {
+    width: 100%;
+    height: 245px;
+  }
+  .mainContainer .container .window {
+    width: 100%;
+    height: 403px;
+    overflow: hidden;
+  }
+  .mainContainer .container .window .slide {
+    height: 100%;
+    opacity: 1;
+    transition: transform ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainContainer .container .arrow {
+    display: none;
+  }
+  .mainContainer .dots {
+    width: 96px;
+    height: 18px;
+    margin-bottom: 0px;
+  }
+}
+@media (max-width: 341px) {
+  .mainContainer {
+    height: 759px;
+  }
+  .mainContainer .title {
+    width: 331px;
+    font-size: 28px;
+    line-height: 33.6px;
+  }
+  .mainContainer .title span {
+    color: #305381;
+  }
+  .mainContainer .container {
+    width: 100%;
+    height: 245px;
+  }
+  .mainContainer .container .window {
+    width: 100%;
+    height: 463px;
+    overflow: hidden;
+  }
+  .mainContainer .container .window .slide {
+    height: 100%;
+    opacity: 1;
+    transition: transform ease-in-out 0.4s;
+    display: flex;
+    flex-direction: row;
+  }
+  .mainContainer .container .arrow {
+    display: none;
+  }
+  .mainContainer .dots {
+    width: 96px;
+    height: 18px;
+    margin-bottom: 0px;
+  }
+}/*# sourceMappingURL=slider.module.css.map */

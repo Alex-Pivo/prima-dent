@@ -1,0 +1,528 @@
+.fourthBlock {
+  width: 100%;
+  height: 766px;
+}
+.fourthBlock .container {
+  width: 94.4%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fourthBlock .container .title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #282828;
+  margin-bottom: 70px;
+}
+.fourthBlock .container .photos {
+  width: 81.25%;
+  height: 500px;
+  margin-bottom: 70px;
+}
+.fourthBlock .container .photos .photoLeft {
+  width: 100%;
+  height: 100%;
+  background: url("../4Block/tooth/22.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.fourthBlock .container .photos .photoLeft .photoRight {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+  width: 1580px;
+  height: 300%;
+  position: static;
+  background: url("../4Block/tooth/1.png");
+  background-position: center;
+  background-position-y: -460px;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: 2;
+  transition: all 0.1s ease;
+}
+.fourthBlock .container .photos .photoLeft .circle {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: absolute;
+  z-index: 4;
+  top: 40%;
+  left: 46.5%;
+  cursor: grab;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.fourthBlock .container .photos .photoLeft .circle .circleText {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 0.0475423634px;
+  text-align: left;
+}
+.fourthBlock .container .photos .photoLeft .circle .barrier {
+  width: 100%;
+  height: 478%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.fourthBlock .container .photos .photoLeft .line {
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  background-color: #f9f9f9;
+}
+.fourthBlock .container .btn {
+  width: 278px;
+  height: 65px;
+  border-radius: 5px;
+  background-color: #305381;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #f9f9f9;
+}
+
+@media screen and (max-width: 1541px) {
+  .fourthBlock .container .photos {
+    height: 440px;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 1260px;
+    height: 270%;
+    position: static;
+    background-position: center;
+    background-position-y: -340px;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .fourthBlock {
+    height: 650px;
+    margin-bottom: 0px;
+  }
+  .fourthBlock .container .title {
+    margin-bottom: 60px;
+  }
+  .fourthBlock .container .photos {
+    height: 400px;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 1140px;
+    height: 260%;
+    position: static;
+    background-position: center;
+    background-position-y: -300px;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 30%;
+  }
+  .fourthBlock .container .photos .photoLeft .circle .barrier {
+    height: 440px;
+  }
+}
+@media screen and (max-width: 1231px) {
+  .fourthBlock {
+    height: 625px;
+    margin-bottom: 0px;
+  }
+  .fourthBlock .container .photos {
+    height: 400px;
+  }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 1000px;
+    height: 260%;
+    position: static;
+    background-position: center;
+    background-position-y: -280px;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 34%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 1101px) {
+  .fourthBlock .container .photos {
+    height: 400px;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 890px;
+    height: 230%;
+    position: static;
+    background-position: center -220px;
+    background-size: cover;
+    border-radius: 10px;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 34%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .fourthBlock {
+    height: 525px;
+    margin-bottom: 0px;
+  }
+  .fourthBlock .container .title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .fourthBlock .container .photos {
+    height: 300px;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 800px;
+    height: 250%;
+    background-position: center -210px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+  .fourthBlock .container .photos .photoLeft .circle .circleText {
+    font-size: 10px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle .barrier {
+    height: 340px;
+  }
+  .fourthBlock .container .btn {
+    width: 278px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+}
+@media screen and (max-width: 891px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 720px;
+    height: 220%;
+    background-position: center -166px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 821px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 680px;
+    height: 220%;
+    background-position: center -170px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .fourthBlock {
+    height: 524px;
+    margin-bottom: 0px;
+  }
+  .fourthBlock .container {
+    width: 91.4%;
+  }
+  .fourthBlock .container .title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+  }
+  .fourthBlock .container .photos {
+    height: 323px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 710px;
+    height: 206%;
+    background-position: center -160px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+  .fourthBlock .container .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    line-height: 33px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+}
+@media screen and (max-width: 701px) {
+  .fourthBlock .container {
+    width: 91.4%;
+  }
+  .fourthBlock .container .photos {
+    height: 323px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 700px;
+    height: 206%;
+    background-position: center -156px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+  .fourthBlock .container .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+}
+@media screen and (max-width: 652px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 670px;
+    height: 200%;
+    background-position: center -150px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 602px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 610px;
+    height: 170%;
+    background-position: center -100px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 530px;
+    height: 150%;
+    background-position: center -70px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 70px;
+    height: 70px;
+    top: 38%;
+    left: 44.5%;
+  }
+  .fourthBlock .container .photos .photoLeft .line {
+    width: 5px;
+  }
+}
+@media screen and (max-width: 482px) {
+  .fourthBlock .container .photos {
+    height: 70%;
+  }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 480px;
+    height: 150%;
+    background-position: center;
+    background-position-y: -70px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 70px;
+    height: 70px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 434px) {
+  .fourthBlock {
+    height: 524px;
+  }
+  .fourthBlock .container .photos {
+    height: 70%;
+  }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 420px;
+    height: 150%;
+    background-position: center;
+    background-position-y: -70px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 70px;
+    height: 70px;
+    top: 38%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .fourthBlock {
+    height: 464px;
+  }
+  .fourthBlock .container {
+    padding-top: 82px;
+    width: 91.4%;
+    height: 100%;
+  }
+  .fourthBlock .container .title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+  }
+  .fourthBlock .container .photos {
+    height: 70%;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .fourthBlock .container .photos .photoLeft {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight {
+    height: 100%;
+  }
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 390px;
+    height: 180%;
+    background-position: center;
+    background-position-y: -70px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    top: 36%;
+    left: 42.5%;
+  }
+  .fourthBlock .container .photos .photoLeft .circle .circleText {
+    font-size: 8px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle .barrier {
+    height: 240px;
+  }
+  .fourthBlock .container .btn {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #f9f9f9;
+  }
+}
+@media screen and (max-width: 376px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 365px;
+    height: 180%;
+    background-position: center;
+    background-position-y: -66px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    top: 34%;
+    left: 42.5%;
+  }
+}
+@media screen and (max-width: 341px) {
+  .fourthBlock .container .photos .photoLeft .photoRight .photoTooth {
+    width: 306px;
+    height: 160%;
+    background-position: center;
+    background-position-y: -46px;
+  }
+  .fourthBlock .container .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    top: 36%;
+    left: 42.5%;
+  }
+}/*# sourceMappingURL=fourthBlock.module.css.map */

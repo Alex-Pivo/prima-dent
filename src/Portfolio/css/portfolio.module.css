@@ -1,0 +1,623 @@
+.portfolio {
+  padding-top: 200px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio .titleBox {
+  width: 50%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio .titleBox .title {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 77px;
+  color: #282828;
+}
+.portfolio .titleBox .text {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: center;
+}
+.portfolio .photosBox {
+  width: 81.25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 140px;
+}
+.portfolio .photosBox .name {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  text-align: left;
+}
+.portfolio .photosBox .photos {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 70px;
+}
+.portfolio .photosBox .photos .photoLeft {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+.portfolio .photosBox .photos .photoLeft .photoRight {
+  height: 100%;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+  width: 1580px;
+  height: 160%;
+  position: static;
+  background-position: center -280px;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  z-index: 2;
+  transition: all 0.1s ease;
+}
+.portfolio .photosBox .photos .photoLeft .circle {
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: absolute;
+  z-index: 4;
+  top: 40%;
+  left: 46.5%;
+  cursor: grab;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.portfolio .photosBox .photos .photoLeft .circle .circleText {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 11px;
+  letter-spacing: 0.0475423634px;
+  text-align: left;
+}
+.portfolio .photosBox .photos .photoLeft .circle .barrier {
+  width: 100%;
+  height: 478%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio .photosBox .photos .photoLeft .line {
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  background-color: #f9f9f9;
+}
+
+@media screen and (max-width: 1541px) {
+  .portfolio .photosBox .name {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .portfolio .photosBox .photos {
+    height: 440px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 1300px;
+    height: 100%;
+    position: static;
+    background-position: center -214px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .barrier {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .portfolio .photosBox .photos {
+    height: 400px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 1200px;
+    height: 100%;
+    position: static;
+    background-position: center -200px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 1231px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 1000px;
+    height: 100%;
+    position: static;
+    background-position: center -140px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 1101px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 890px;
+    height: 100%;
+    position: static;
+    background-position: center -90px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .portfolio {
+    padding-top: 128px;
+  }
+  .portfolio .titleBox {
+    height: 100px;
+  }
+  .portfolio .titleBox .title {
+    font-size: 50px;
+  }
+  .portfolio .titleBox .text {
+    font-size: 20px;
+  }
+  .portfolio .photosBox .name {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .portfolio .photosBox .photos {
+    height: 340px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 870px;
+    height: 100%;
+    position: static;
+    background-position: center -120px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .barrier {
+    height: 360px;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .circleText {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 891px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 730px;
+    height: 100%;
+    position: static;
+    background-position: center -70px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 821px) {
+  .portfolio .photosBox .photos {
+    height: 300px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 700px;
+    height: 100%;
+    position: static;
+    background-position: center -80px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 769px) {
+  .portfolio {
+    padding-top: 150px;
+  }
+  .portfolio .titleBox {
+    height: 100px;
+    width: 91.4%;
+    margin-bottom: 60px;
+  }
+  .portfolio .titleBox .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .portfolio .titleBox .text {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .portfolio .photosBox {
+    width: 91.4%;
+    margin-top: 30px;
+  }
+  .portfolio .photosBox .name {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .portfolio .photosBox .photos {
+    height: 300px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 710px;
+    height: 100%;
+    position: static;
+    background-position: center -86px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .barrier {
+    height: 340px;
+  }
+}
+@media screen and (max-width: 701px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 650px;
+    height: 100%;
+    position: static;
+    background-position: center;
+    background-position-y: -10px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 652px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 620px;
+    height: 100%;
+    position: static;
+    background-position: center 0px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 38%;
+  }
+}
+@media screen and (max-width: 602px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 536px;
+    height: 100%;
+    position: static;
+    background-position: center 0px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 40%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 520px) {
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 515px;
+    height: 100%;
+    position: static;
+    background-position: center 0px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 40%;
+    left: 44.5%;
+  }
+  .portfolio .photosBox .photos .photoLeft .line {
+    width: 5px;
+  }
+}
+@media screen and (max-width: 482px) {
+  .portfolio .photosBox .photos {
+    height: 300px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 447px;
+    height: 100%;
+    position: static;
+    background-position: center 0px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 40%;
+    left: 44.5%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .portfolio .titleBox {
+    height: 130px;
+    width: 91.4%;
+    margin-bottom: 40px;
+  }
+  .portfolio .titleBox .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .portfolio .titleBox .text {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .portfolio .photosBox {
+    width: 91.4%;
+    height: auto;
+  }
+  .portfolio .photosBox .name {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+  }
+  .portfolio .photosBox .photos {
+    height: 200px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 400px;
+    height: 100%;
+    position: static;
+    background-position: center -32px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 36%;
+    left: 42.5%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .circleText {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 416px) {
+  .portfolio .titleBox {
+    height: 130px;
+    width: 91.4%;
+  }
+  .portfolio .titleBox .title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .portfolio .titleBox .text {
+    font-size: 18px;
+    line-height: 21.94px;
+  }
+  .portfolio .photosBox {
+    width: 91.4%;
+    height: auto;
+  }
+  .portfolio .photosBox .name {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+  }
+  .portfolio .photosBox .photos {
+    height: 200px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 380px;
+    height: 100%;
+    position: static;
+    background-position: center -30px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 36%;
+    left: 42.5%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .circleText {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .portfolio .photosBox {
+    height: auto;
+  }
+  .portfolio .photosBox .photos {
+    width: 100%;
+    height: 200px;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 345px;
+    height: 100%;
+    position: static;
+    background-position: center -16px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 36%;
+    left: 42.5%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .circleText {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 341px) {
+  .portfolio .photosBox {
+    height: auto;
+  }
+  .portfolio .photosBox .photos {
+    width: 100%;
+  }
+  .portfolio .photosBox .photos .photoLeft .photoRight .photoTooth {
+    width: 316px;
+    height: 100%;
+    position: static;
+    background-position: center -6px;
+    background-size: cover;
+    z-index: 2;
+    transition: all 0.1s ease;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: #f9f9f9;
+    position: absolute;
+    z-index: 4;
+    top: 36%;
+    left: 42.5%;
+  }
+  .portfolio .photosBox .photos .photoLeft .circle .circleText {
+    font-size: 8px;
+  }
+}/*# sourceMappingURL=portfolio.module.css.map */

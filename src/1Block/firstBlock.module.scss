@@ -1,0 +1,373 @@
+.firstBlock {
+  width: 100%;
+  height: 907px;
+  background: url("../assets/img/Block1.png");
+  background-position: center;
+  background-size: cover;
+  .shadow {
+    padding-top: 513px;
+    width: 100%;
+    height: 100%;
+    background: #2c2c2c8f;
+    .main__text {
+      width: 900px;
+      height: 289px;
+      margin-left: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .title {
+        color: #ffffff;
+      }
+      .subTitle {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 35px;
+        letter-spacing: 0.10000000149011612px;
+      }
+      .main__btn {
+        width: 364px;
+        height: 65px;
+        padding: 10px 32px 10px 32px;
+        border-radius: 5px;
+        background-color: #2c3b50;
+        font-size: 24px;
+        line-height: 36px;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-weight: 600;
+        // transition: all 0.4s ease-in-out 0s;
+        position: relative;
+
+        &:hover {
+          background-color: #305381;
+          transition: all 0.4s ease 0s;
+        }
+        &:active {
+          background-color: #305381;
+        }
+  
+        &::before {
+          content: "";
+          position: absolute;
+          background-image: url("/tooth.png");
+          background-size: cover;
+          background-position: center;
+          left: 10px;
+          bottom: 0px;
+          width: 40px;
+          height: 40px;
+          // background: #305381;
+          transform: translateX(0%);
+          transition: transform 1s ease;
+          opacity: 0;
+          rotate: (35deg);
+          transition: all 0.8s ease 0s;
+        }
+  
+        &:hover::before {
+          transition: all 0.8s ease 0s;
+          transform: translateX(10%);
+          transform: translateY(-100%);
+          rotate: (-35deg);
+          opacity: 1;
+        }
+  
+        &:active::before {
+          transform: translateX(10%);
+          transform: translateY(-100%);
+          rotate: (-35deg);
+          opacity: 1;
+        }
+  
+        &::after {
+          content: "";
+          position: absolute;
+          background-image: url("/tooth.png");
+          background-size: cover;
+          background-position: center;
+          right: 10px;
+          bottom: 0px;
+          width: 40px;
+          height: 40px;
+          // background: #305381;
+          transform: translateX(0%);
+          transition: transform 1s ease;
+          opacity: 0;
+          rotate: (-35deg);
+          transition: all 0.8s ease 0s;
+        }
+  
+        &:hover::after {
+          transition: all 0.8s ease 0s;
+          transform: translateX(10%);
+          transform: translateY(-100%);
+          rotate: (35deg);
+          opacity: 1;
+        }
+  
+        &:active::after {
+          transform: translateX(10%);
+          transform: translateY(-100%);
+          rotate: (35deg);
+          opacity: 1;
+        }
+      }
+      .main__btn:hover{
+        color: #f9f9f9;
+        background-color: #305381;
+        transition: all 0.4s ease-in-out 0s;
+      }
+
+    }
+
+    .main__icons {
+      width: 46%;
+      height: 100px;
+      margin-left: 49.5%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      .mouse {
+        height: 37px;
+        width: 37px;
+        background: url("../assets/img/mouse.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .circle {
+        position: fixed;
+        z-index: 20;
+        width: 97px;
+        height: 97px;
+        bottom: 20px;
+        right: 2%;
+        box-shadow: 0px 3px 20px 0px #47474740;
+        background-color: #305381;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .telegram {
+          width: 59px;
+          height: 59px;
+          background: url("../assets/img/telegram.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: all 0.2s ease 0s;
+        }
+        .cross {
+          width: 40px;
+          height: 40px;
+          background: url("../assets/img/cross.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          transition: all 0.2s ease 0s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .firstBlock {
+    width: 100%;
+    height: 762px;
+    .shadow {
+      padding-top: 413px;
+      .main__text {
+        width: 874px;
+        height: 289px;
+      }
+      .main__icons {
+        width: 46%;
+        height: 70px;
+        padding-bottom: 30px;
+        margin-left: 49%;
+        .mouse {
+          width: 22.5px;
+          height: 31.8px;
+        }
+        .circle {
+          width: 77px;
+          height: 77px;
+          box-shadow: 0px 3px 20px 0px #47474740;
+          background-color: #305381;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .telegram {
+            width: 40.83px;
+            height: 40.83px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .firstBlock {
+    width: 100%;
+    height: 686px;
+    .shadow {
+      padding-top: 370px;
+      .main__text {
+        width: 64%;
+        height: 249px;
+        .title {
+          font-size: 46px;
+          line-height: 57px;
+        }
+        .subTitle {
+          font-size: 20px;
+        }
+        .main__btn {
+          width: 324px;
+          height: 55px;
+          font-size: 20px;
+        }
+      }
+      .main__icons {
+        width: 46%;
+        height: 70px;
+        padding-bottom: 30px;
+        margin-left: 49%;
+        .mouse {
+          width: 22.5px;
+          height: 31.8px;
+        }
+        .circle {
+          width: 77px;
+          height: 77px;
+          margin-bottom: 35px;
+          box-shadow: 0px 3px 20px 0px #47474740;
+          background-color: #305381;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .telegram {
+            width: 40.83px;
+            height: 40.83px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .firstBlock {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: -80px;
+    background: url("../assets/img/Block1.png");
+    background-position: center;
+    background-size: cover;
+    .shadow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .main__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 91.4%;
+        height: 200px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+        .title {
+          font-size: 44px;
+          line-height: 55px;
+        }
+        .subTitle {
+          display: none;
+        }
+        .main__btn {
+          width: 100%;
+          height: 60px;
+          font-size: 22px;
+        }
+      }
+      .main__icons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .firstBlock {
+    width: 100%;
+    height: 100vh;
+    background: url("../assets/img/mobilePhoto.png");
+    background-position: center;
+    background-size: cover;
+    .shadow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .main__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 91.4%;
+        height: 250px;
+        margin-bottom: 40px;
+        margin-left: 0px;
+        .title {
+          font-size: 44px;
+          line-height: 55px;
+        }
+        .subTitle {
+          display: none;
+        }
+        .main__btn {
+          width: 100%;
+          height: 60px;
+          font-size: 22px;
+        }
+      }
+      .main__icons {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 370px) {
+  .firstBlock {
+    .shadow {
+      .main__text {
+        .title {
+          font-size: 38px;
+          line-height: 55px;
+        }
+        .subTitle {
+          display: none;
+        }
+        .main__btn {
+          width: 100%;
+          height: 60px;
+          font-size: 18px;
+        }
+      }
+      .main__icons {
+        display: none;
+      }
+    }
+  }
+}

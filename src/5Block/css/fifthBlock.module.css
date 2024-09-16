@@ -1,0 +1,245 @@
+.fifthBlock {
+  width: 100%;
+  height: 600px;
+}
+.fifthBlock .container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.fifthBlock .container .title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 58px;
+  color: #282828;
+}
+.fifthBlock .container .services {
+  max-width: 94%;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.fifthBlock .container .services .service {
+  min-width: 480px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.fifthBlock .container .services .service .serviceTitle {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  color: #282828;
+}
+.fifthBlock .container .services .service .serviceText {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #737583;
+}
+.fifthBlock .container .services .service .boxes {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.fifthBlock .container .services .service .boxes .btn {
+  width: 100%;
+  height: 65px;
+  border-radius: 5px;
+  background-color: #305381;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #f9f9f9;
+}
+.fifthBlock .container .services .service .boxes .price {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: #282828;
+}
+
+.services::-webkit-scrollbar {
+  width: 6px;
+}
+
+@media (max-width: 1440px) {
+  .fifthBlock {
+    height: 464px;
+    margin-bottom: 0px;
+  }
+  .fifthBlock .container {
+    width: 100%;
+    height: 100%;
+    padding-top: 140px;
+  }
+  .fifthBlock .container .title {
+    margin-bottom: 60px;
+  }
+  .fifthBlock .container .services {
+    max-width: 100%;
+    height: 300px;
+  }
+  .fifthBlock .container .services .service {
+    min-width: 490px;
+    height: 230px;
+  }
+  .fifthBlock .container .services .service .serviceTitle {
+    margin-bottom: 20px;
+  }
+  .fifthBlock .container .services .service .serviceText {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .fifthBlock {
+    height: 440px;
+  }
+  .fifthBlock .container {
+    padding-top: 100px;
+  }
+  .fifthBlock .container .title {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+  .fifthBlock .container .services .service .serviceTitle {
+    font-size: 30px;
+  }
+  .fifthBlock .container .services .service .serviceText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .fifthBlock .container .services .service .boxes .btn {
+    height: 55px;
+    font-size: 20px;
+  }
+  .fifthBlock .container .services .service .boxes .price {
+    font-size: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .fifthBlock {
+    height: 820px;
+  }
+  .fifthBlock .container {
+    margin-top: 0px;
+    padding-top: 82px;
+    width: 91.4%;
+    height: 578px;
+  }
+  .fifthBlock .container .title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+  }
+  .fifthBlock .container .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 673px;
+    flex-shrink: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  .fifthBlock .container .services .service {
+    min-width: 96%;
+    min-height: 185px;
+    margin-bottom: 60px;
+  }
+  .fifthBlock .container .services .service .serviceTitle {
+    font-size: 24px;
+  }
+  .fifthBlock .container .services .service .serviceText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .fifthBlock .container .services .service .boxes {
+    width: 100%;
+    height: 60px;
+  }
+  .fifthBlock .container .services .service .boxes .btn {
+    height: 60px;
+    font-size: 20px;
+  }
+  .fifthBlock .container .services .service .boxes .price {
+    font-size: 24px;
+  }
+}
+@media (max-width: 426px) {
+  .fifthBlock {
+    height: 832px;
+  }
+  .fifthBlock .container {
+    margin-top: 0px;
+    width: 91.4%;
+    padding-top: 82px;
+  }
+  .fifthBlock .container .title {
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 34px;
+    text-align: center;
+  }
+  .fifthBlock .container .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 100%;
+    height: 673px;
+    flex-shrink: inherit;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  .fifthBlock .container .services .service {
+    min-width: 96%;
+    min-height: 265px;
+    margin-bottom: 60px;
+  }
+  .fifthBlock .container .services .service .serviceTitle {
+    font-size: 24px;
+  }
+  .fifthBlock .container .services .service .serviceText {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .fifthBlock .container .services .service .boxes {
+    width: 100%;
+    height: 60px;
+  }
+  .fifthBlock .container .services .service .boxes .btn {
+    height: 60px;
+    font-size: 20px;
+  }
+  .fifthBlock .container .services .service .boxes .price {
+    font-size: 24px;
+  }
+}/*# sourceMappingURL=fifthBlock.module.css.map */
