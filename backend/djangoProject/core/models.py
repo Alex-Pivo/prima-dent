@@ -50,3 +50,5 @@ class Galery(models.Model):
         verbose_name='Фото для "Галереї"'
         verbose_name_plural='Фотографії "Галереї"'
 
+    def __str__(self):
+        return 'Photo'

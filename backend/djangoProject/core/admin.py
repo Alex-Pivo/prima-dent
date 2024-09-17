@@ -1,5 +1,7 @@
 from django.contrib import admin
-from . models import OurTeamSettings,Reviews,MainPageSettings,AboutUsPage
+from . models import (OurTeamSettings,
+                      Reviews,MainPageSettings,
+                      AboutUsPage,Galery)
 
 
 
@@ -27,3 +29,6 @@ class ReviewsAdmin(admin.ModelAdmin):
 class AboutUsPageAdmin(admin.ModelAdmin):
     pass
 
+@admin.register(Galery,site=my_admin_site)
+class GaleryAdmin(admin.ModelAdmin):
+    pass

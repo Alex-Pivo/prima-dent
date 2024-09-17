@@ -36,7 +36,7 @@ class AboutUsPageView(APIView):
 
 
 class GaleryView(APIView):
-    def get(self):
+    def get(self,request):
         return Response(serializers.GalerySerializer(
             Galery.objects.all(),many=True).data,status=status.HTTP_200_OK)
 
