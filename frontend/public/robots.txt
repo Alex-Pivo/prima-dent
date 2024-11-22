@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://primadent.uz.ua/sitemap.xml
