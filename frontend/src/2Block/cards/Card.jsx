@@ -34,7 +34,8 @@ function Card() {
             className={style.card}
           >
             <div className={style.pic__container}>
-              <img className={style.pic} src={pics[card.id - 1]} />
+              <img className={style.pic} src={pics[card.id - 1]} alt="" />
+
             </div>
             <h4 className={style.card__title}>{card.title}</h4>
             <p className={style.card__text}>{card.text}</p>

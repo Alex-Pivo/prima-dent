@@ -39,7 +39,7 @@ function ThirdBlock() {
                   variants={textAnimation}
                   className={style.main__text}
                 >
-                  <span>Стоматологія Primadent</span> - сучасна клініка в
+                  <span>Стоматологія PRIMADENT</span> - сучасна клініка в
                   самісінькому центрі міста Ужгород. <br /> Ми надаємо
                   різноманітні послуги: від професійної гігієни до імплантації
                   зубів.
