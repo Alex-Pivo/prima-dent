@@ -396,9 +396,9 @@ function Footer() {
                 <p className={style.label}>Розробка</p>
                 <a
                   className={style.link}
-                  href="https://www.instagram.com/y.k.agency/?utm_source=ig_web_button_share_sheet"
+                  href="http://yk-agency.com.ua/"
                 >
-                  @YK-agency
+                  Y.K AGENCY
                 </a>
                 <p className={style.text}>
                   primadent.uz.ua © Всі права захищені
